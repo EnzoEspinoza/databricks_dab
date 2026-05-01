@@ -37,7 +37,7 @@ jobs:
 
       - uses: databricks/setup-cli@main
 
-      - run: databricks bundle run dab_job --refresh-all
+      - run: databricks bundle run job_1 --refresh-all
         working-directory: dab
         env:
           DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
